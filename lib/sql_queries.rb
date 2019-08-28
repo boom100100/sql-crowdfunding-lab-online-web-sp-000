@@ -28,7 +28,7 @@ def selects_user_names_and_amounts_of_all_pledges_grouped_by_name_then_orders_th
 end
 
 def selects_the_category_names_and_pledge_amounts_of_all_pledges_in_the_music_category
-  "SELECT projects.category_names, SUM(pledges.pledge_amounts) FROM pledges JOIN projects ON pledges.project_id = projects.id WHERE category_names = \"music\" GROUP BY projects.category_names ORDER BY ;"
+  "SELECT projects.category_names, SUM(pledges.pledge_amounts) FROM pledges JOIN projects ON pledges.project_id = projects.id WHERE category_names = \"music\";"
 end
 
 def selects_the_category_name_and_the_sum_total_of_the_all_its_pledges_for_the_books_category
